@@ -17,8 +17,6 @@ export default function WorkCard({
   tags,
   description,
 }: Props) {
-  console.log(tags);
-
   return (
     <Box
       w="480px"

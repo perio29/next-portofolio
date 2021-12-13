@@ -9,15 +9,16 @@ export default function Works() {
       <WorkCard
         title="チャットアプリ"
         image={work1}
-        url="https://google.com"
+        url="https://react-chat-d27d0.web.app
+        "
         tags={["JavaScript", "React", "Firebase"]}
         description="チャットのアプリを作りました"
       />
       <WorkCard
         title="ペット健康管理アプリ"
         image={work2}
-        url="https://google.com"
-        tags={["JavaScript", "React", "Firebase"]}
+        url="https://pets-health-care.web.app"
+        tags={["TypeScript", "React", "Firebase"]}
         description="ペットの健康を管理するアプリを作りました"
       />
     </HStack>

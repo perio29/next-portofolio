@@ -1,11 +1,10 @@
 import { IconButton } from "@chakra-ui/button";
+import Link from "next/link";
 import {
   Box,
-  Center,
   Circle,
   Container,
   Flex,
-  Grid,
   Heading,
   HStack,
   List,
@@ -16,9 +15,9 @@ import {
 } from "@chakra-ui/layout";
 import type { NextPage } from "next";
 import Image from "next/image";
-import profilePic from "../public/profile.webp";
-import hobby1 from "../public/hobby1.jpg";
-import hobby2 from "../public/hobby2.jpg";
+import profile from "../public/profile2.png";
+import animal from "../public/animal.png";
+import soccer from "../public/soccer.png";
 import {
   BsFacebook,
   BsGithub,
@@ -35,16 +34,22 @@ const Home: NextPage = () => {
   return (
     <Container pb="48px" maxWidth="60%">
       <Flex pt="48px" width="50%" alignItems="center">
-        <Circle w="120px" h="120px" overflow="hidden">
-          <Image src={profilePic} alt="プロフィール写真" />
+        <Circle w="160px" h="160px" overflow="hidden">
+          <Image src={profile} alt="プロフィール写真" />
         </Circle>
         <Box ml="18px">
-          <Heading>山田太郎</Heading>
+          <Heading>青野耀慈</Heading>
           <Text mt="8px">フリーランス</Text>
           <Stack mt="8px" direction="row" spacing={4}>
             <IconButton aria-label="Twitterへのリンク" icon={<BsTwitter />} />
             <IconButton aria-label="Facebookへのリンク" icon={<BsFacebook />} />
-            <IconButton aria-label="GitHubへのリンク" icon={<BsGithub />} />
+            <a
+              href="https://github.com/perio29"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton aria-label="githubへのリンク" icon={<BsGithub />} />
+            </a>
             <IconButton aria-label="サイトへのリンク" icon={<BsLink />} />
           </Stack>
         </Box>
@@ -54,7 +59,7 @@ const Home: NextPage = () => {
           自己紹介
         </Heading>
         <Text>
-          2000年生まれ。座右の銘は「継続は力なり」です。大学では経済学部に所属しマクロ経済について勉強しています。昨年よりプログラミング学習を始め、Rect、Next.jsを用いたアプリ開発を得意としています。
+          1999年生まれ。座右の銘は「正しさよりも楽しさを」です。大学では獣医になるための勉強をしていて、伝染病学研究室に所属しています。今年からプログラミング学習を始め、React、Next.jsを用いたアプリ開発を得意としています。
         </Text>
       </Box>
       <Box mt="48px" mb="36px">
@@ -89,11 +94,9 @@ const Home: NextPage = () => {
           経歴
         </Heading>
         <UnorderedList>
-          <ListItem>2000年埼玉県生まれ</ListItem>
-          <ListItem>2018年4月 一橋大学経済学部入学</ListItem>
-          <ListItem>2022年4月 株式会社ホゲホゲ開発部入社</ListItem>
-          <ListItem>2021年8月 株式会社ホゲホゲ退社</ListItem>
-          <ListItem>2021年9月 株式会社フガフガ研究開発部入社</ListItem>
+          <ListItem>1999年神奈川県生まれ</ListItem>
+          <ListItem>2018年4月 麻布大学獣医学部獣医学科入学</ListItem>
+          <ListItem>2024年3月 麻布大学獣医学部獣医学科卒業予定</ListItem>
         </UnorderedList>
       </Box>
       <Box mt="48px">
@@ -110,11 +113,9 @@ const Home: NextPage = () => {
             boxShadow="sm"
           >
             <Box>
-              <Image alt="趣味の写真" src={hobby1} objectFit="cover" />
+              <Image alt="趣味の写真" src={animal} width={477} height={400} />
             </Box>
-            <Box p="24px">
-              犬と猫を2匹ずつ飼っているので一緒に過ごすのが好きです。
-            </Box>
+            <Box p="24px">犬と猫を3匹ずつ飼っていて、動物が好きです。</Box>
           </Box>
           <Box
             w="100%"
@@ -125,10 +126,10 @@ const Home: NextPage = () => {
             boxShadow="sm"
           >
             <Box>
-              <Image alt="趣味の写真" src={hobby2} objectFit="cover" />
+              <Image alt="趣味の写真" src={soccer} width={477} height={400} />
             </Box>
             <Box p="24px">
-              サッカー歴15年です。中学の時に全国大会に出場しました。
+              サッカー歴15年です。大学でもサッカーをしています。
             </Box>
           </Box>
         </HStack>
