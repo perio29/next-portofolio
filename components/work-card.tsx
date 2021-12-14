@@ -19,7 +19,7 @@ export default function WorkCard({
 }: Props) {
   return (
     <Box
-      w="480px"
+      w={["100%", "480px"]}
       border="1px"
       borderColor="gray.200"
       borderRadius="4px"

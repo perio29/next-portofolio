@@ -33,7 +33,13 @@ import { ListIcon } from "@chakra-ui/react";
 const Home: NextPage = () => {
   return (
     <Container pb="48px" maxWidth="60%">
-      <Flex pt="48px" width="50%" alignItems="center">
+      <Stack
+        pt="48px"
+        width={["100%", "50%"]}
+        direction={["column", "row"]}
+        alignItems="center"
+        justifyContent="center"
+      >
         <Circle w="160px" h="160px" overflow="hidden">
           <Image src={profile} alt="プロフィール写真" />
         </Circle>
@@ -53,7 +59,8 @@ const Home: NextPage = () => {
             <IconButton aria-label="サイトへのリンク" icon={<BsLink />} />
           </Stack>
         </Box>
-      </Flex>
+      </Stack>
+
       <Box mt="48px">
         <Heading size="md" mb="12px">
           自己紹介
@@ -103,7 +110,7 @@ const Home: NextPage = () => {
         <Heading size="md" mb="12px">
           趣味
         </Heading>
-        <HStack spacing="18px">
+        <Stack direction={["column", "row"]} spacing="18px">
           <Box
             w="100%"
             border="1px solid"
@@ -132,7 +139,7 @@ const Home: NextPage = () => {
               サッカー歴15年です。大学でもサッカーをしています。
             </Box>
           </Box>
-        </HStack>
+        </Stack>
       </Box>
     </Container>
   );
