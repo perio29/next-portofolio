@@ -35,20 +35,25 @@ const Home: NextPage = () => {
     <Container pb="48px" maxWidth="60%">
       <Stack
         pt="48px"
-        width={["100%", "50%"]}
+        width={["100%", "45%"]}
         direction={["column", "row"]}
         alignItems="center"
-        justifyContent="center"
+        justifyContent="space-between"
       >
         <Circle w="160px" h="160px" overflow="hidden">
           <Image src={profile} alt="プロフィール写真" />
         </Circle>
-        <Box ml="18px">
+        <Box>
           <Heading>青野耀慈</Heading>
-          <Text mt="8px">フリーランス</Text>
+          <Text mt="8px">フロントエンドエンジニア</Text>
           <Stack mt="8px" direction="row" spacing={4}>
-            <IconButton aria-label="Twitterへのリンク" icon={<BsTwitter />} />
-            <IconButton aria-label="Facebookへのリンク" icon={<BsFacebook />} />
+            <a
+              href="https://twitter.com/gooner_kapi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconButton aria-label="Twitterへのリンク" icon={<BsTwitter />} />
+            </a>
             <a
               href="https://github.com/perio29"
               target="_blank"

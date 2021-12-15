@@ -25,7 +25,7 @@ export default function WorkCard({
       borderRadius="4px"
       overflowY="hidden"
     >
-      <Box w="100%" h="240px" overflowY="hidden">
+      <Box w="100%" h={["200px", "300px"]} overflowY="hidden">
         <Image src={image} alt="作品の画像" />
       </Box>
       <Box p="24px">
