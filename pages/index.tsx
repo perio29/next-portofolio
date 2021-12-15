@@ -32,7 +32,7 @@ import { ListIcon } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
-    <Container pb="48px" maxWidth="60%">
+    <Container pb="48px" maxWidth={["85%", "60%"]}>
       <Stack
         pt="48px"
         width={["100%", "45%"]}
@@ -61,7 +61,6 @@ const Home: NextPage = () => {
             >
               <IconButton aria-label="githubへのリンク" icon={<BsGithub />} />
             </a>
-            <IconButton aria-label="サイトへのリンク" icon={<BsLink />} />
           </Stack>
         </Box>
       </Stack>
