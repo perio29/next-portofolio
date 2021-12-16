@@ -35,7 +35,7 @@ export default function Works() {
         image={work3}
         url="https://next-portfolio-nine-opal.vercel.app"
         tags={["TypeScript", "Next.js"]}
-        description="作品を掲載するために、ポートフォリオサイトを作りました。使用技術はNext.js、TypeScriptで、スタイリングはChakra UIを使用しました。"
+        description="作品を掲載するために、ポートフォリオサイトを作りました。使用した技術はNext.js、TypeScriptで、スタイリングはChakra UIを使用しました。"
       />
     </Stack>
   );
